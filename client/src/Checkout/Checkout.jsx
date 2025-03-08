@@ -34,7 +34,7 @@ const Checkout = () => {
       }
 
       try {
-        const response = await axios.post("http://localhost:5000/api/payment/create-payment-intent", {
+        const response = await axios.post("https://e-commerce-k8ud.onrender.com/api/payment/create-payment-intent", {
           amount: totalPrice * 100,
           customerName,
           customerEmail,
